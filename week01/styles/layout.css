@@ -1,0 +1,77 @@
+:root {
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav nav"
+    "main aside"
+    "footer footer";
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto auto 1fr auto;
+  min-height: 100vh;
+  font-family: Georgia, serif;
+}
+
+header {
+  grid-area: header;
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  font-size: 1.25rem;
+}
+
+nav {
+  grid-area: nav;
+  background-color: black;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  flex: 1;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+  font-weight: bold;
+}
+
+main {
+  grid-area: main;
+  background-color: lightgray;
+  padding: 1rem;
+}
+
+aside {
+  grid-area: aside;
+  background-color: white;
+  padding: 1rem;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}

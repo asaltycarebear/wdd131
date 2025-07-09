@@ -1,11 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
-</head>
-<body>
-    <h1>WDD 131</h1>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 131: Dynamic Web Fundamentals - Garrett Stockwell</title>
+        <meta name="description" content="My (Garrett Stockwell's) Home Page for the class WDD 131 - Dynamic Web Fundamentals. This page includes an about me section, and various links related to my work in this class.">    
+        <meta name="author" content="Garrett Stockwell">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Quantico&display=swap" rel="stylesheet">
+        <script src="scripts/getdates.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <!-- WDD 131: Dynamic Web Fundamentals - <span style="color: yellow">C. Garrett Stockwell</span> --> <!-- This line matches the example -->
+            <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span> <!-- This line mathes the instructions -->
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="https://linkedin.com">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/2-pet/1?lang=eng&id=p2-p8#p2">Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+
+        <h1>
+            Garrett Stockwell
+        </h1>
+
+        <main class="container">
+            <section class="card">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <p>My name is Garrett Stockwell. I live in Colorado, in the United States. I love my wife, reading, and all types of games! I am currently working in Inventory and Logistics at a local oxygen supply company.</p>
+                    <img src="images/profile.jpg" alt="A profile picture of Garrett Stockwell">
+                </div>
+                <div class="colorado">
+                    <h3>Colorado</h3>
+                    <div class="colorado-content">
+                        <figure>
+                            <img src="images/colorado-flag.webp" alt="The Colorado State Flag">
+                            <figcaption>CO Flag</figcaption>
+                        </figure>
+                        <p>Colorado is a state in the western United States known for its stunning Rocky Mountain landscapes, diverse outdoor activities, and vibrant cities like Denver and Boulder.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Web Dev Resources</h2>
+                <ul>
+                    <li><a href="https://fonts.google.com/">Google Fonts</a></li>
+                    <li><a href="https://imageresizer.com/">Image Resizer</a></li>
+                    <li><a href="https://coolors.co/">Color Palette Generator</a></li>
+                    <li><a href="https://webaim.org/resources/contrastchecker/">Color Contrast Check</a></li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>©️<span id="currentyear"></span> ❖ Garrett Stockwell ❖ Colorado, USA</p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
 </html>
