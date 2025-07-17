@@ -1,0 +1,32 @@
+@media screen and (min-width: 500px) {
+    :root {
+        --body-font: "Roboto";
+        --primary-color: #ccd9a8ff;
+    }
+
+    body {
+        font-family: var(--body-font);
+    }
+
+    header {
+        background-color: #000;
+        color: #fff;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+    header, main, footer {
+        margin: 1rem auto;
+        border: 1px solid #ddd;
+        padding: 1rem;
+    }
+
+    section {
+        padding: 1rem;
+        background-color: #fff;
+    }
+}

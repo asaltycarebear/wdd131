@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Loop Test</title>
+</head>
+<body>
+  <h1>JavaScript Loop Output</h1>
+  <pre id="output"></pre> <!-- For displaying results -->
+  <button id="menubutton">Menu</button>
+    <nav id="menuitems" class="hidden">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    </nav>
+  
+  <script>
+    // === VARIABLES ===
+    const DAYS = 6;
+    const LIMIT = 50;
+    let studentReport = [11, 42, 33, 64, 29, 37, 44];
+
+    const output = document.getElementById("output");
+
+    function log(text) {
+      console.log(text);        // Log to console
+      output.textContent += text + "\n"; // Show on page
+    }
+
+    // === FOR LOOP ===
+    log("FOR loop:");
+    for (let i = 0; i < studentReport.length; i++) {
+      if (studentReport[i] < LIMIT) {
+        log(studentReport[i]);
+      }
+    }
+
+    // === WHILE LOOP ===
+    log("\nWHILE loop:");
+    let i = 0;
+    while (i < studentReport.length) {
+      if (studentReport[i] < LIMIT) {
+        log(studentReport[i]);
+      }
+      i++;
+    }
+
+    // === FOREACH LOOP ===
+    log("\nFOREACH loop:");
+    studentReport.forEach(value => {
+      if (value < LIMIT) {
+        log(value);
+      }
+    });
+
+    // === FOR...IN LOOP ===
+    log("\nFOR...IN loop:");
+    for (let index in studentReport) {
+      if (studentReport[index] < LIMIT) {
+        log(studentReport[index]);
+      }
+    }
+
+    // === DAY NAMES LOOP ===
+    log("\nNext DAYS:");
+    const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    let today = new Date();
+
+    for (let i = 0; i <= DAYS; i++) {
+      let nextDate = new Date();
+      nextDate.setDate(today.getDate() + i);
+      let dayName = dayNames[nextDate.getDay()];
+      log(dayName);
+    }
+
+    menubutton.addEventListener('click', () => {
+        menuitems.classList.toggle('open');
+        });
+
+ 
+  </script>
+</body>
+</html>
