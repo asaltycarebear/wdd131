@@ -3,10 +3,6 @@
     --primary-color: #ccd9a8ff;
 }
 
-* {
-
-}
-
 body {
     font-family: var(--body-font);
 }
