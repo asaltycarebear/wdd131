@@ -24,7 +24,7 @@ header {
   color: var(--secondary-color)
 }
 
-header h1 {
+header h2 {
   font-family: var(--heading-font);
 }
 
