@@ -27,10 +27,6 @@ header {
   margin-bottom: 1.5rem;
 }
 
-header h2 {
-  font-family: var(--heading-font);
-}
-
 main h1 {
   grid-column: 1 / -1; /*This makes the header span the entire grid no matter what. But still keeping it in the min container*/
   font-size: 1.5rem;
