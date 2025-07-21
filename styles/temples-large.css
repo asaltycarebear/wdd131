@@ -1,0 +1,29 @@
+@media screen and (min-width: 600px) {
+  
+  nav ul {
+    list-style: none; /*This makes it so there are no bullet points*/
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-family: var(--body-font);
+  }
+  
+  nav ul li a {
+    text-decoration: none; /*Keep, this removes the underlines! Dont forget*/
+    color: var(--secondary-color);
+    /* font-weight: bold; */ /*Don't need? butt keep in case*/
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    font-family: var(--body-font);
+  }
+  .hamburger {
+    display: none;
+  }
+
+}
