@@ -21,7 +21,10 @@ header {
   align-items: center;
   padding: 10px 20px;
   background-color: var(--accent2-color);
-  color: var(--secondary-color)
+  color: var(--secondary-color);
+  font-family: var(--heading-font);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 header h2 {
@@ -100,6 +103,7 @@ nav ul li a:hover {
     padding: 4px 8px;
     border-radius: 4px;
     font-family: var(--body-font);
+    font-size: 1rem;
   }
   
   nav ul li {
