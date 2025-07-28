@@ -1,9 +1,9 @@
 @media screen and (min-width: 700px) {
 :root {
-  --primary-color: #a8763eff;
+  --primary-color: #FF883E;
   --secondary-color: #f7f3e3ff;
   --accent1-color: #ecf0f1ff;
-  --accent2-color: #6f1a07ff;
+  --accent2-color: #169B62;
   --accent3-color: #2b2118ff;
   --heading-font: "Quantico", sans-serif;
   --body-font: "Oxanium", sans-serif;
