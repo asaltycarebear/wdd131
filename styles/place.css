@@ -24,8 +24,11 @@ body {
 
 header {
   text-align: center;
+  background-color: var(--accent2-color);
+  color: var(--accent1-color);
   padding: 1rem;
   border-bottom: 2px solid;
+  border-color: var(--accent1-color);
 }
 
 header h1 {
@@ -37,6 +40,7 @@ header h1 {
   height: auto;
   display: block;
   border-bottom: 2px solid;
+  border-top: 2px solid;
 }
 
 .country-data {
@@ -101,7 +105,6 @@ header h1 {
 }
 
 .weather-details p {
-  display: flex;
   justify-content: space-between;
 }
 
@@ -109,6 +112,8 @@ footer {
   background-color: var(--accent2-color);
   color: var(--secondary-color);
   text-align: center;
+  border-top: 2px solid;
+  border-color: var(--accent1-color);
   padding: 1rem;
   font-size: 1rem;
   font-family: var(--heading-font);

@@ -1,4 +1,4 @@
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
 :root {
   --primary-color: #a8763eff;
   --secondary-color: #f7f3e3ff;
@@ -29,8 +29,10 @@
 /* Anchor the boxes to the image corners */
 .country-data, .weather {
     position: absolute;
-    background: rgba(255, 255, 255, 0.9);
-    border: 1px solid #ccc;
+    background: var(--primary-color);
+    color: var(--accent1-color);
+    opacity: .85;
+    border: 1px solid var(--accent1-color);
     padding: 1rem;
     width: 250px;
     text-align: left;
@@ -38,14 +40,13 @@
 
 /* Top-left corner */
 .country-data {
-    top: 10%;
+    bottom: 10%;
     left: 5%;
 }
 
 /* Bottom-right corner */
 .weather {
-    width: 30%;
-    bottom: 10%;
+    top: 10%;
     right: 5%;
 }
 
@@ -57,6 +58,7 @@
 .weather-icon img {
     width: 50px;
     height: 50px;
+    color: var(--accent1-color);
 }
 
 /* Footer */
