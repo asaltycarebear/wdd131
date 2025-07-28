@@ -1,7 +1,7 @@
 :root {
   --primary-color: #FF883E;
   --secondary-color: #f7f3e3ff;
-  --accent1-color: #ecf0f1ff;
+  --accent1-color: #fff;
   --accent2-color: #169B62;
   --accent3-color: #2b2118ff;
   --heading-font: "Quantico", sans-serif;
@@ -85,9 +85,15 @@ header h1 {
   text-align: center;
 }
 
-.weather h2 {
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
+.weather h2::after {
+    content: '';
+    display: block;
+    background-image: url('../images/weather-icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    margin: 0.5rem auto; /* centers horizontally */
 }
 
 .weather-icon img {
@@ -109,8 +115,8 @@ header h1 {
 }
 
 footer {
-  background-color: var(--accent2-color);
-  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  color: var(--accent3-color);
   text-align: center;
   border-top: 2px solid;
   border-color: var(--accent1-color);
