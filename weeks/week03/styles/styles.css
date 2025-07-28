@@ -1,0 +1,48 @@
+body {
+	font-family: Roboto, helvetica, sans-serif;
+}
+
+header,
+main,
+footer {
+	max-width: 760px;
+	margin: 0 auto;
+}
+
+marquee {
+	padding: 1rem;
+	background-color: #eee;
+}
+
+h1 {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+main {
+	display: grid;
+}
+
+h2 {
+	color: navy;
+	text-align: center;
+}
+
+article p {
+	text-align: justify;
+}
+
+.callout {
+	color: #000000;
+	background-color: #ffa9ef;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: #000000;
+}
+
+footer {
+	margin-top: 1rem;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	font-size: smaller;
+	text-align: right;
+}

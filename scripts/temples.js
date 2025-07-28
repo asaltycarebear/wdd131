@@ -10,7 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
         /*Toggle*/ 
         if (navMenu.classList.contains("open")) {
             menuButton.textContent = "✖";
-        } else {
+        } 
+        else {
             menuButton.textContent = "☰";
         }
     });

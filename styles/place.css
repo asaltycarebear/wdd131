@@ -1,0 +1,120 @@
+:root {
+  --primary-color: #a8763eff;
+  --secondary-color: #f7f3e3ff;
+  --accent1-color: #ecf0f1ff;
+  --accent2-color: #6f1a07ff;
+  --accent3-color: #2b2118ff;
+  --heading-font: "Quantico", sans-serif;
+  --body-font: "Oxanium", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 2px solid;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 2px solid;
+}
+
+.country-data {
+  padding: 1rem;
+  border-bottom: 2px solid;
+  text-align: center;
+}
+
+.country-data h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.data-grid,
+.weather-details {
+  display: grid;
+  grid-template-columns: auto auto; /* Left column for labels, right column for values */
+  gap: 0.5rem 1.5rem;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.data-grid p,
+.weather-details p {
+  display: contents; /* Allows label and value to sit in separate grid cells */
+}
+
+.data-grid strong,
+.weather-details strong {
+  text-align: left;
+}
+
+.data-grid span,
+.weather-details span {
+  text-align: right;
+}
+
+.weather {
+  padding: 1rem;
+  border-bottom: 2px solid;
+  text-align: center;
+}
+
+.weather h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.weather-icon img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.weather-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem 2rem;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.weather-details p {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  background-color: var(--accent2-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: var(--heading-font);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  /*add z index if needed*/
+}

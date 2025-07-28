@@ -92,6 +92,7 @@ nav ul li a:hover {
 
 
 /* Mobile view */
+
 @media (max-width: 600px) {
   nav ul {
     list-style: none; /*This makes it so there are no bullet points*/
@@ -112,6 +113,7 @@ nav ul li a:hover {
     color: var(--secondary-color);
     /* font-weight: bold; */ /*Don't need? butt keep in case*/
   }
+
   #nav-menu {
     display: none;
     flex-direction: column;
