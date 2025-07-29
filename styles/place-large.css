@@ -18,11 +18,12 @@
     opacity: .85;
     border: 1px solid var(--accent1-color);
     padding: 1rem;
-    width: 250px;
+    width: 275px;
     text-align: left;
 }
 
 .country-data {
+    font-size: 1.1rem;
     bottom: 10%;
     left: 5%;
 }
@@ -30,6 +31,10 @@
 .weather {
     top: 10%;
     right: 5%;
+}
+
+.weather h2 {
+  text-align: right;
 }
 
 .weather-icon {
@@ -41,5 +46,9 @@
     width: 50px;
     height: 50px;
     color: var(--accent1-color);
+}
+
+.weather-details {
+  font-size: 1.1rem;
 }
 }
