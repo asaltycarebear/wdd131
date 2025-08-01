@@ -95,7 +95,6 @@ nav ul li a:hover {
   background-color: var(--accent1-color);
   border-radius: 0.75rem;
   padding: 1rem;
-  box-shadow: var(--accent3-color);
 }
 
 
