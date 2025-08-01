@@ -1,0 +1,47 @@
+
+:root {
+  --primary-color: #a8763eff;
+  --secondary-color: #f7f3e3ff;
+  --accent1-color: #ecf0f1ff;
+  --accent2-color: #6f1a07ff;
+  --accent3-color: #2b2118ff;
+  --heading-font: "Quantico", sans-serif;
+  --body-font: "Oxanium", sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+    display: block;
+    gap: 200px;
+}
+
+main picture {
+    display: flex;
+    flex-direction: column;
+    margin-top: 500px;
+    width: 400px;
+}
+
+@keyframes fadein {
+    10% {
+        opacity: 0;
+        filter: brightness(0)
+    }
+
+    100% {
+        opacity: 1;
+        filter: brightness(1);
+    }
+}
+
+.fade {
+  opacity: 0;
+  animation: fadein 2s ease-out forwards;
+  background-color: black; /* optional black background during load */
+}
+

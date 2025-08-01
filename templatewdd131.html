@@ -18,7 +18,51 @@
 <body>
     <header></header>
     <h1>Template</h1>
-    <main></main>
+    <main>
+        <table> <!--Creates a Table-->
+            <thead> <!--creates a row for a table head-->
+            
+                <tr> <!--creates a table row-->
+                    <th colspan="4">ACME Wildwest Services</th> <!--table head content. colspan creates total number of columns for everything-->
+                </tr> 
+            
+                <tr> <!---->
+                    <td class="blank"></td> <!--table data creates a cell in a row-->
+                    <th>Basic</th> <!---->
+                    <th>Premium</th>
+                    <th>Deluxe</th>
+                </tr>
+            </thead>
+
+            <tbody> <!---->
+
+                <tr>
+                    <th>Feature 1</th>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+
+                <tr>
+                    <th>Feature 2</th>
+                    <td>❌</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+
+                <tr>
+                    <th>Feature 3</th>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>✔️</td>
+                </tr>
+
+            </tbody>
+            <tfoot>tfoot</tfoot>
+            
+            <caption>Table 1: Account Feature Comparison</caption>
+        </table>
+    </main>
     <footer>
         <p>©️<span id="currentyear"></span> ❖ Garrett Stockwell ❖ Colorado, USA</p>
         <p id="lastModified"></p>
