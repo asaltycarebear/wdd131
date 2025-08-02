@@ -102,6 +102,7 @@ const temples = [
 
 const templesContainer = document.getElementById("temples-container");
 
+// Function for displaying desired filter. Creates 
 function displayTemples(filteredTemples) {
   templesContainer.innerHTML = "";
 
@@ -168,7 +169,7 @@ function showSmallTemples() {
 
 document.querySelectorAll("#nav-menu a").forEach(link => {
   link.addEventListener("click", (event) => {
-    event.preventDefault(); // Prevent changing nonsense
+    event.preventDefault(); // Prevent reloading nonsense
 
     const filter = event.target.textContent.toLowerCase();
 
@@ -192,4 +193,4 @@ document.querySelectorAll("#nav-menu a").forEach(link => {
   });
 });
 
-showAllTemples();
+showAllTemples(); // needed for initial loading
