@@ -179,7 +179,7 @@ document.querySelectorAll("#nav-menu a").forEach(link => {
 
     const filter = event.target.textContent.toLowerCase();
 
-    switch (filter) {
+    switch (filter) { // Makes one at a time
       case "home":
         showAllTemples();
         break;
