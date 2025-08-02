@@ -148,18 +148,12 @@ function showAllTemples() {
 }
 
 function showOldTemples() {
-  const filtered = temples.filter(t => {
-    const year = parseInt(t.dedicated.split(",")[0].trim());
-    return year < 1900;
-  });
+  const filtered = temples.filter(t => t.dedicated.getFullYear() < 1900);
   displayTemples(filtered);
 }
 
 function showNewTemples() {
-  const filtered = temples.filter(t => {
-    const year = parseInt(t.dedicated.split(",")[0].trim());
-    return year > 2000;
-  });
+  const filtered = temples.filter(t => t.dedicated.getFullYear() > 2000);
   displayTemples(filtered);
 }
 
