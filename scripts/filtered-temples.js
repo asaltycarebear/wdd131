@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const temples = [
   {
-    templeName: "Aba Nigeria",
+    templeName: "Aba",
     location: "Aba, Nigeria",
     dedicated: "2005, August, 7",
     area: 11500,
@@ -27,7 +27,7 @@ const temples = [
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
   },
   {
-    templeName: "Manti Utah",
+    templeName: "Manti",
     location: "Manti, Utah, United States",
     dedicated: "1888, May, 21",
     area: 74792,
@@ -35,7 +35,7 @@ const temples = [
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
   },
   {
-    templeName: "Payson Utah",
+    templeName: "Payson",
     location: "Payson, Utah, United States",
     dedicated: "2015, June, 7",
     area: 96630,
@@ -43,7 +43,7 @@ const temples = [
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
   },
   {
-    templeName: "Yigo Guam",
+    templeName: "Yigo",
     location: "Yigo, Guam",
     dedicated: "2020, May, 2",
     area: 6861,
@@ -59,7 +59,7 @@ const temples = [
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
   },
   {
-    templeName: "Lima Perú",
+    templeName: "Lima",
     location: "Lima, Perú",
     dedicated: "1986, January, 10",
     area: 9600,
@@ -67,7 +67,7 @@ const temples = [
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
   },
   {
-    templeName: "Mexico City Mexico",
+    templeName: "Mexico City",
     location: "Mexico City, Mexico",
     dedicated: "1983, December, 2",
     area: 116642,
@@ -75,7 +75,7 @@ const temples = [
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
     {
-    templeName: "Provo City Center",
+    templeName: "City Center",
     location: "Provo, Utah, USA",
     dedicated: "2016, March, 20",
     area: 85084,
@@ -91,7 +91,7 @@ const temples = [
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/albuquerque-new-mexico/400x250/albuquerque-temple-lds-137883-wallpaper.jpg"
   },
     {
-    templeName: "Manhattan New York",
+    templeName: "Manhattan",
     location: "Manhattan, New York, USA",
     dedicated: "2014, June, 13",
     area: 20630,
@@ -102,7 +102,7 @@ const temples = [
 
 const templesContainer = document.getElementById("temples-container");
 
-// Function for displaying desired filter. Creates 
+// Function for displaying desired filter. Creates Cards
 function displayTemples(filteredTemples) {
   templesContainer.innerHTML = "";
 
@@ -110,10 +110,11 @@ function displayTemples(filteredTemples) {
     const card = document.createElement("section");
     card.classList.add("temple-card");
 
-    const name = document.createElement("h2");
+    const name = document.createElement("h2"); // Name
     name.textContent = temple.templeName;
+    name.innerHTML = `${temple.templeName}`;
 
-    const location = document.createElement("p");
+    const location = document.createElement("p"); // Location
     location.innerHTML = `<strong>Location:</strong> ${temple.location}`;
 
     const dedicated = document.createElement("p");

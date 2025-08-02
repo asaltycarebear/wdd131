@@ -33,12 +33,6 @@ main h1 {
   text-align: center;
 }
 
-main h2 {
-  grid-column: 1 / -1; /*This makes the header span the entire grid no matter what. But still keeping it in the min container*/
-  font-size: .001rem;
-  text-align: center;
-}
-
 #temples-container {
   text-align: center;
 }
