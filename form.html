@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Garrett Stockwell">
+    <meta name="description" content="A form assignment for week 5 of WDD131">
+     <title>WDD 131: Product Review</title>
+    <!--Update--> <link rel="stylesheet" href="styles/form.css">
+    <!--Update--> <link rel="stylesheet" href="styles/form-large.css">
+    <!--Update--> <script src="scripts/form.js" defer></script>
+    <!--Keep--> <script src="../../scripts/getdates.js" defer></script>
+    <!--Keep--> <script src="../../scripts/customscripts.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Quantico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header></header>
+    <h1>Form</h1>
+    <main>
+        <form action="review.html" method="get">
+            <label for="product-name">Product Name</label>
+            <select name="product" id="product" required>
+                <option value="" disable selected>Select a Product</option>
+            </select>
+            <button type="submit">Post Review</button>
+        </form>
+    </main>
+    <footer>
+        <p>©️<span id="currentyear"></span> ❖ Garrett Stockwell ❖ Colorado, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
