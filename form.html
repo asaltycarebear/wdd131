@@ -16,16 +16,53 @@
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Quantico&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header></header>
-    <h1>Form</h1>
+    <header>
+        <p>Product Reveiew</p>
+    </header>
     <main>
-        <form action="review.html" method="get">
-            <label for="product">Product Name</label>
-            <select name="product" id="product" required>
-                <option value="" disable selected>Select a Product</option>
-            </select>
-            <button type="submit">Post Review</button>
-        </form>
+        <section class="form-section">
+            <form action="review.html" method="get">
+
+                <label for="product">Product Name</label>
+                <select name="product" id="product" required>
+                    <option value="" disable selected>Select a Product</option>
+                </select>
+
+                <hr class="soft-divider">
+
+                <label for="rating">Product Rating</label>
+                <section class="rating">
+                    <label for="rating1">
+                        1★<br>
+                        <input type="radio" id="rating1" name="rating" value="1">
+                    </label>
+
+                    <label for="rating2">
+                        2★<br>
+                        <input type="radio" id="rating2" name="rating" value="2">
+                    </label>
+
+                    <label for="rating3">
+                        3★<br>
+                        <input type="radio" id="rating3" name="rating" value="3">
+                    </label>
+
+                    <label for="rating4">
+                        4★<br>
+                        <input type="radio" id="rating4" name="rating" value="4">
+                    </label>
+
+                    <label for="rating5">
+                        5★<br>
+                        <input type="radio" id="rating5" name="rating" value="5">
+                    </label>
+                </section>
+
+                <hr class="soft-divider">
+
+                <button type="submit">Post Review</button>
+            </form>
+        </section>
     </main>
     <footer>
         <p>©️<span id="currentyear"></span> ❖ Garrett Stockwell ❖ Colorado, USA</p>
