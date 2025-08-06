@@ -1,0 +1,61 @@
+:root {
+    --primary-color: #6f1a07ff;
+    --secondary-color: #f7f3e3ff;
+    --accent1-color: #ecf0f1ff;
+    --accent2-color: #2b2118ff;
+    --background-color: rgb(138, 101, 58);
+    --heading-font: "Quantico", sans-serif;
+    --body-font: "Oxanium", sans-serif;
+    --backup-color: rgb(255, 255, 255); /*only here to move colors around to diferent names, delete later*/ 
+}
+
+main {
+    margin-bottom: 7rem; /* with foother max height, ensures there will allways be room for the bottom of the sections, and the footer to be visable*/
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    padding-left: 1rem;
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+}
+
+main section {
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    margin: 1rem;
+    border: 2px solid var(--accent2-color);
+    padding-left: 1rem;
+}
+
+main p {
+    font-family: var(--body-font);
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+main section picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+    max-height: 6rem; /* with main margin bottom, ensures there will allways be room for the bottom of the sections, and the footer to be visable*/
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    border-top: 2px solid;
+    border-color: var(--accent2-color);
+    font-size: 1rem;
+    font-family: var(--heading-font);
+    position: fixed;
+    margin-top: 1rem;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
