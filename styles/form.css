@@ -1,12 +1,12 @@
 :root {
-  --primary-color: #6f1a07ff;
-  --secondary-color: #f7f3e3ff;
-  --accent1-color: #ecf0f1ff;
-  --accent2-color: #2b2118ff;
-  --background-color: #a8763eff;
-  --heading-font: "Quantico", sans-serif;
-  --body-font: "Oxanium", sans-serif;
-  --backup-color: rgb(255, 255, 255); /*only here to move colors around to diferent names, delete later*/ 
+    --primary-color: #6f1a07ff;
+    --secondary-color: #f7f3e3ff;
+    --accent1-color: #ecf0f1ff;
+    --accent2-color: #2b2118ff;
+    --background-color: #a8763eff;
+    --heading-font: "Quantico", sans-serif;
+    --body-font: "Oxanium", sans-serif;
+    --backup-color: rgb(255, 255, 255); /*only here to move colors around to diferent names, delete later*/ 
 }
 
 header {
@@ -27,6 +27,7 @@ form {
     gap: 1rem;
     max-width: 400px;
     margin: 0 auto;
+    margin-bottom: 10%;
 }
 
 select {
@@ -37,43 +38,70 @@ select {
 }
 
 .rating {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .rating label {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 1.5rem;
-  cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
 .rating input {
-  margin-top: 0.25rem;
+     margin-top: 0.25rem;
+}
+
+.date {
+    display: block;           
+    margin: 0 auto;           
+    width: 70%;
+    text-align: center;    
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 1rem;
+  margin: 0 auto;  
+}
+
+textarea {
+    min-height: 4rem;
+}
+
+.username {
+    display: block;           
+    margin: 0 auto;           
+    width: 50%;
+    text-align: center;     
 }
 
 .soft-divider {
-  border: none;
-  height: 1px;
-  background-color: #ccc;
-  opacity: 0.5;
-  margin: 1rem 0;
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    opacity: 0.5;
+    margin: 1rem 0;
 }
 
+
 footer {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  text-align: center;
-  border-top: 2px solid;
-  border-color: var(--accent1-color);
-  padding: 1rem;
-  font-size: 1rem;
-  font-family: var(--heading-font);
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  /*add z index if needed*/
+    max-height: 10%;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    border-top: 2px solid;
+    border-color: var(--accent1-color);
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: var(--heading-font);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /*add z index if needed*/
 }

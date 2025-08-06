@@ -9,8 +9,8 @@
     <!--Update--> <link rel="stylesheet" href="styles/form.css">
     <!--Update--> <link rel="stylesheet" href="styles/form-large.css">
     <!--Update--> <script src="scripts/form.js" defer></script>
-    <!--Keep--> <script src="../../scripts/getdates.js" defer></script>
-    <!--Keep--> <script src="../../scripts/customscripts.js" defer></script>
+    <!--Keep--> <script src="scripts/getdates.js" defer></script>
+    <!--Keep--> <script src="scripts/customscripts.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Quantico&display=swap" rel="stylesheet">
@@ -60,7 +60,40 @@
 
                 <hr class="soft-divider">
 
+                <label for="date">Date of Installation:</label>
+                <section class="date">
+                    <input type="date" id="date" name="date" required>
+                </section>
+
+                <hr class="soft-divider">
+
+                <label for="features">Useful Features</label>
+                <section class="features">
+                    <label><input type="checkbox">Durability</label>
+                    
+                    <label><input type="checkbox">Ease of Use</label>
+                    
+                    <label><input type="checkbox">Preformance</label>
+                    
+                    <label><input type="checkbox">Design</label>
+                </section>
+            
+                <hr class="soft-divider">
+
+                <label for="review">Written Reveiew</label>
+                <textarea id="review" name="review"></textarea>
+                
+                <hr class="soft-divider">
+
+                <label for="username">User Name</label>
+                <section class="username">
+                    <input type="text" id="username" name="username">
+                </section>
+
+                <hr class="soft-divider">
+
                 <button type="submit">Post Review</button>
+
             </form>
         </section>
     </main>
