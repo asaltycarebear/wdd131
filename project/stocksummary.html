@@ -17,19 +17,31 @@
 </head>
 <body>
     <header>
-        <h1>Bjorn Inventory Managment Demo</h1>
+        <h1>Recived product</h1>
         <nav>
             <button id ="menu" class="hamburger">☰</button>
-
             <nav id ="nav-menu"> <!-- Need id so it can be hidden under the id menu -->
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="receive.html">Recive</a></li>
-                <li><a href="stocksummary.html">Stock</a></li>
-            </ul>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="receive.html">Recive</a></li>
+                    <li><a href="stocksummary.html">Stock</a></li>
+                </ul>
+            </nav>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <table class="stocksummary" id="stocksummary">
+            <tr>
+                <th class="sku">SKU</th> <!---->
+                <th class="make">Make</th> <!--Not on Reception, item upload only-->
+                <th class="model">Model</th> <!--Not on Reception, item upload only-->
+                <th class="description">Description</th> <!--Not on Reception, item upload only-->
+                <th class="location">Location</th> <!--NOT on reception, automaticly set to the location "Receiving". Can change for customer if they would like to recive to location manualy-->
+                <th class="qantity">Quantity</th> <!---->
+                <th class="velocity">Velocity</th> <!--NOT on reception, math for spreadsheet only-->
+            </tr>
+        </table>
+    </main>
     <footer>
         <p>©️<span id="currentyear"></span> ❖ Garrett Stockwell ❖ Colorado, USA</p>
         <p id="lastModified"></p>
