@@ -138,7 +138,11 @@ text-indent: 2rem;
 
 @media (max-width: 600px) {
 .about {
-
+background-color: var(--background-color);
+color: var(--secondary-color);
+margin: 1rem;
+border: 2px solid var(--accent2-color);
+padding-left: 1rem;
 }
 
 header {
