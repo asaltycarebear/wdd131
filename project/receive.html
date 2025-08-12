@@ -17,30 +17,39 @@
 </head>
 <body>
     <header>
+        
         <h1>Receive Form</h1>
+
         <nav>
             <button id ="menu" class="hamburger">☰</button>
             <nav id ="nav-menu"> <!-- Need id so it can be hidden under the id menu -->
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="receive.html">Recive</a></li>
+                    <li><a href="receive.html">Receive</a></li>
                     <li><a href="stocksummary.html">Stock</a></li>
                 </ul>
             </nav>
+        </nav>
     </header>
     <main>
-        <form>
-            <section>
-                <label for="sku">SKU:</label>
-                <input type="text" id="sku" name="sku" placeholder="Enter SKU">
-            </section>
-            <section>
-                <label for="Quantity">Quantity:</label>
-                <input type="text" id="quantity" name="quantity" placeholder="Enter Quantity">                
-            </section>
-            <section>
-                <input type="submit" value="Submit Form">
-            </section>
+        <form class="receiveForm">
+            
+            <!-- Need to add leading 0 or prefix/sufix option later -->
+            <label for="sku">SKU:</label>
+            <input type="text" id="sku" name="sku" placeholder="Enter SKU">
+        
+            <hr class="soft-divider">
+
+            <label for="Quantity">Quantity:</label>
+            <input type="text" id="quantity" name="quantity" placeholder="Enter Quantity">   
+            
+            <hr class="soft-divider">
+
+            <!-- add submissions since cleared later -->
+            <label for="checkbox">Clear Form on Submit: <input type="checkbox" id="clearAfterSubmit"></label>
+            <input type="submit" value="Submit Form">
+            
+
         </form>
     </main>
     <footer>

@@ -1,31 +1,157 @@
+/* @media screen and (min-width: 600px) {
+
+header {
+background-color: var(--primary-color);
+color: var(--secondary-color);
+font-family: var(--heading-font);
+padding-left: 1rem;
+padding-right: 1rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+nav ul {
+list-style: none;
+display: flex;
+gap: 20px;
+margin: 0;
+padding: 4px 8px;
+border-radius: 4px;
+font-family: var(--body-font);
+font-size: 1rem;
+}
+
+nav ul li a {
+text-decoration: none;
+color: var(--secondary-color);
+}
+
+header nav button {
+display: none;
+}
+
+} */
+
+:root {
+--primary-color: #6f1a07ff;
+--secondary-color: #f7f3e3ff;
+--accent1-color: #ecf0f1ff;
+--accent2-color: #2b2118ff;
+--background-color: rgb(138, 101, 58);
+--table-header-color: rgb(85, 85, 85);
+--even-row-color: rgb(150, 150, 150);
+--heading-font: "Quantico", sans-serif;
+--body-font: "Oxanium", sans-serif;
+--backup-color: rgb(255, 255, 255); /*only here to move colors around to diferent names, delete later*/ 
+}
+
 @media screen and (min-width: 600px) {
-  
-  nav ul {
-    list-style: none; /*This makes it so there are no bullet points*/
+.hero {
+    position: relative;
     display: flex;
-    gap: 20px;
-    margin: 0;
-    padding: 4px 8px;
-    border-radius: 4px;
-    font-family: var(--body-font);
-    font-size: 1rem;
-  }
-  
-  nav ul li a {
-    text-decoration: none; /*Keep, this removes the underlines! Dont forget*/
+    justify-content: center;
+    max-width: 1200px; /* match the image's limit */
+    margin: 0 auto;    /* center in page */
+}
+
+.hero img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.hero section,
+.hero h2,
+.about {
+    max-width: 100%; /* never wider than the hero container */
+    box-sizing: border-box;
+}
+
+.hero section {
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    background-color: rgba(111, 26, 7, 0.8);
     color: var(--secondary-color);
-    /* font-weight: bold; */ /*Don't need? butt keep in case*/
-  }
+    padding: 1rem;
+    border-radius: 20px;
+}
 
-  #temples-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
-    font-family: var(--body-font);
-  }
+.hero h2 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
 
-  header nav button {
-    display: none;
-  }
+#nav-menu {
+position: absolute;
+top: 5rem;
+right: 10%;
+background-color: var(--secondary-color);
+color: var(--accent2-color);
+padding: 0.5rem 1rem;
+border-radius: 4px;
+border: 2px solid var(--primary-color);
+z-index: 10;
+width: 30%;
+justify-content: space-evenly;
+}
 
+nav ul {
+display: flex;
+list-style: none;
+margin: 0;
+padding: 0;
+font-family: var(--body-font);
+font-size: 1rem;
+width: 100%;
+justify-content: space-evenly;
+}
+
+nav ul li a {
+text-decoration: none;
+padding: 4px 4px;
+border: 4px solid transparent;
+border-radius: 4px;
+box-sizing: border-box;
+transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+background-color: var(--accent1-color);
+color: var(--accent2-color);
+border-color: var(--primary-color);
+}
+
+.hamburger {
+display: none;
+}
+
+
+.about {
+    position: absolute;
+    top: 55vw; /* can be adjusted */
+    margin-bottom: 7rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(111, 26, 7, 0.8);
+    color: var(--secondary-color);
+    border-radius: 4px;
+    border: 2px solid var(--primary-color);
+    font-size: 3rem;
+}
+.about p {
+    margin-bottom: 1rem;
+    max-width: 1000px;
+    box-sizing: border-box;
+}
+}
+
+@media screen and (min-width: 1200px) {
+    .about {
+        top: 60%;
+    }
 }
