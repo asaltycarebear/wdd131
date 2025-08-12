@@ -12,7 +12,7 @@
 }
 
 main {
-margin-bottom: 7rem; /* with footer max height, ensures room for sections and footer */
+margin-bottom: 8rem; /* with footer max height, ensures room for sections and footer */
 }
 
 h1, h2 {
@@ -128,8 +128,6 @@ background: #f9f9f9;
 box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
-
-
 .about {
 font-family: var(--body-font);
 margin: 1rem;
@@ -143,6 +141,15 @@ color: var(--secondary-color);
 margin: 1rem;
 border: 2px solid var(--accent2-color);
 padding-left: 1rem;
+}
+
+.largeHero {
+display: none;
+}
+
+.heroMobile{
+width: 100%;
+height: auto;
 }
 
 header {
